@@ -1,8 +1,44 @@
+# Python
 __pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Envs
 .venv/
-*.pkl
-*.csv
-*.xlsx
-.DS_Store
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Jupyter
 .ipynb_checkpoints/
 
+# Data (keep folders via .gitkeep; ignore large data files)
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.csv
+data/processed/*.parquet
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts
+models/*.joblib
+models/*.pkl
+!models/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
